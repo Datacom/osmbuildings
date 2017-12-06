@@ -2058,7 +2058,7 @@ var Layers = {
   },
 
   remove: function() {
-    this.container.parentNode.removeChild(this.container);
+    this.container.parentNode ? this.container.parentNode.removeChild(this.container) : null;
   },
 
   setSize: function(width, height) {
